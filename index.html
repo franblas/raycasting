@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Raycasting</title>
+<meta charset="UTF-8">
+</head>
+
+<style media="screen">
+html,body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width:100%;
+  background-color: #000000;
+}
+
+#debugdata {
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:0;
+  background: #000000;
+  font-weight: bold;
+  color: #ffffff;
+  z-index:100;
+}
+
+#container {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  /*background: grey;*/
+  background: linear-gradient(0deg, #808080 50%, #1683FB 50%);
+}
+
+.column-wall {
+  display:inline-block;
+  width: 1px;
+  background: #ffffff;
+  border-top:1px solid #000000;
+  border-bottom:1px solid #000000;
+}
+
+#container > .column-wall {
+  text-align:center;
+}
+</style>
+
+<body>
+<div id="container"></div>
+<div id="debugdata"><div>
+<script type="text/javascript" src="raycasting.js"></script>
+</body>
+</html>
